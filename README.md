@@ -319,12 +319,12 @@ the prevoius code will generate this:
         public static new readonly Xamarin.Forms.BindableProperty BackgroundColorProperty =
                                         Xamarin.Forms.BindableProperty.Create(
                                                         nameof(BackgroundColor),
-                                                        typeof(Microsoft.Maui.Graphics.Color),
+                                                        typeof(Xamarin.Forms.Color),
                                                         typeof(HeaderControl));
 
-        public new Microsoft.Maui.Graphics.Color BackgroundColor
+        public new Xamarin.Forms.Color BackgroundColor
         {
-            get => (Microsoft.Maui.Graphics.Color)GetValue(BackgroundColorProperty);
+            get => (Xamarin.Forms.Color)GetValue(BackgroundColorProperty);
             set => SetValue(BackgroundColorProperty, value);
         }
     }
