@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<LangVersion>10.0</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<BuildOutputTargetFolder>analyzers</BuildOutputTargetFolder>
+		<Authors>rrmanzano</Authors>
+		<Description>Source generator that automatically transforms fields into BindableProperties that can be used in Xamarin</Description>
+		<PackageTags>Xamarin;BindableProperty;Source Generator</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<VersionPrefix>0.3.0</VersionPrefix>
+		<PackageProjectUrl>https://github.com/rrmanzano/xamarin-bindableproperty-generator</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/rrmanzano/xamarin-bindableproperty-generator</RepositoryUrl>
+		<PackageId>X.BindableProperty.Generator</PackageId>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.1.0" PrivateAssets="all" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\..\README.md">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+</Project>
