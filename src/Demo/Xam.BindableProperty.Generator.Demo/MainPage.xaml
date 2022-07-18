@@ -13,7 +13,8 @@
             FirstName = "{Binding BindingContext.FirstName, Mode=OneWayToSource}"
             LastName = "{Binding BindingContext.LastName, Mode=OneWayToSource}"
             BirthDate = "{Binding BindingContext.BirthDate, Mode=OneWayToSource}"
-            Country = "{Binding BindingContext.Country, Mode=OneWayToSource}"/>
+            Country = "{Binding BindingContext.Country, Mode=OneWayToSource}"
+            BackgroundColor="AliceBlue"/>
 
         <Button 
             Text="Log data"

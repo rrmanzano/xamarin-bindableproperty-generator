@@ -1,17 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Xam.BindableProperty.Generator.Demo.CustomControls.HeaderControl"
              x:Name="this">
-    <ContentView.Resources>
+    <StackLayout.Resources>
 
         <Style TargetType="{x:Type Label}">
             <Setter Property="Margin"  Value="0,10,0,0" />
         </Style>
 
-    </ContentView.Resources>
-
-    <StackLayout>
+    </StackLayout.Resources>
 
         <Label Text="FirstName"/>
         <Entry
@@ -33,7 +31,7 @@
         <Label Text="Full Name : "/>
         <Label
             FontAttributes="Bold"
-            Text="{Binding Source={x:Reference this},Path=DisplayName}"/>
+            Text="{Binding Source={x:Reference this},Path=DisplayName}"
+            BackgroundColor="{Binding Source={x:Reference this},Path=BackgroundColor}"/>
 
-    </StackLayout>
-</ContentView>
+</StackLayout>

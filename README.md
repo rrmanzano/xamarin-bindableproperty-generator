@@ -2,7 +2,7 @@
 
 # Xamarin.BindableProperty.Generator
 
-Source generator that automatically transforms fields into BindableProperties that can be used in Xamarin.<br />
+Source generator that automatically transforms fields into BindableProperties that can be used in Xamarin.  
 Are you looking for the MAUI project? check this [link](https://github.com/rrmanzano/maui-bindableproperty-generator)
 
 ## Installation

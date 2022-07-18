@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace Xam.BindableProperty.Generator.Demo.CustomControls
 {
-    public partial class HeaderControl : ContentView
+    public partial class HeaderControl : StackLayout
     {
         #pragma warning disable CS0169
 
@@ -24,8 +24,8 @@ namespace Xam.BindableProperty.Generator.Demo.CustomControls
         [AutoBindable]
         private readonly string? _displayName;
 
-        [AutoBindable(HidesUnderlyingProperty = true, DefaultValue = "Xamarin.Forms.Color.FromHex(\"#bdbde6\")")]
-        private readonly Color? _backgroundColor;
+        [AutoBindable(HidesUnderlyingProperty = true, DefaultValue = "Xamarin.Forms.Color.Red")]
+        private readonly Color _backgroundColor;
 
         #pragma warning restore CS0169
 
